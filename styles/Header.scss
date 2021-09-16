@@ -1,0 +1,54 @@
+.wrapper__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  transition: 400ms;
+}
+
+.moreBlack {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.header {
+  z-index: 20;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 0;
+  max-width: 1165px;
+  top: 0;
+
+  .leftBlock {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 56px;
+    }
+
+    a {
+      margin-right: 32px;
+    }
+  }
+
+  .rightBlock {
+    &__button {
+      color: white !important;
+    }
+
+    &__button:last-child {
+      margin-left: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 40px 20px;
+  }
+}

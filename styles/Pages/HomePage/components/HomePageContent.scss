@@ -1,0 +1,132 @@
+.home {
+  height: 100%;
+
+  &__body {
+    padding-top: 230px;
+
+    .title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 140%;
+      margin-bottom: 24px;
+    }
+
+    .subTitle {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 32px;
+    }
+
+    .subTitle:last-child {
+      padding-bottom: 338px;
+    }
+
+    .button {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 170px;
+      height: 48px;
+      background: #3F51B5;
+      box-shadow: 0px 0px 15px rgba(41, 54, 125, 0.3);
+      border-radius: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home__body {
+    padding-top: 150px;
+  }
+
+  .home__picture__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+
+    svg {
+      width: 400px;
+      height: auto;
+    }
+  }
+
+  .home__picture__left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    svg {
+      width: 400px;
+      height: auto;
+    }
+  }
+
+  .MuiGrid-root:nth-child(1) {
+    z-index: 2;
+  }
+  .MuiGrid-root:nth-child(2) {
+    z-index: 1;
+  }
+  .MuiGrid-root:nth-child(3) {
+    z-index: 1;
+    position: relative;
+  }
+  .MuiGrid-root:nth-child(4) {
+    z-index: 2;
+  }
+
+  .home__body .title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .home__picture__left svg {
+    width: 300px;
+    height: auto;
+  }
+
+  .home__picture__right svg {
+    width: 300px;
+    height: auto;
+  }
+
+  .home__body .title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .home__picture__left svg {
+    width: 200px;
+    height: auto;
+  }
+
+  .home__picture__right svg {
+    width: 200px;
+    height: auto;
+  }
+
+  .home__body {
+    padding-top: 100px;
+  }
+  .home__body .subTitle:last-child {
+    padding-bottom: 0;
+  }
+}
+
+
